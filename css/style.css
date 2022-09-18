@@ -1221,6 +1221,7 @@ body {
 }
 
 .home__container {
+  min-height: 31.25rem;
   padding-top: 5rem;
   position: relative;
   z-index: 2;
