@@ -8,6 +8,8 @@
 
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,regular,500,600,700);
 
+@import url(https://fonts.googleapis.com/css?family=Roboto+Flex:regular&display=swap);
+
 @charset "UTF-8";
 
 @font-face {
@@ -813,15 +815,15 @@ body {
   }
 }
 
-@supports (padding-right: clamp( 0.9375rem , -5.625rem  +  7.5vw , 1.875rem )) {
+@supports (padding-right: clamp( 0.9375rem , -10rem  +  12.5vw , 2.5rem )) {
   .header {
-    padding-right: clamp( 0.9375rem , -5.625rem  +  7.5vw , 1.875rem );
+    padding-right: clamp( 0.9375rem , -10rem  +  12.5vw , 2.5rem );
   }
 }
 
-@supports not (padding-right: clamp( 0.9375rem , -5.625rem  +  7.5vw , 1.875rem )) {
+@supports not (padding-right: clamp( 0.9375rem , -10rem  +  12.5vw , 2.5rem )) {
   .header {
-    padding-right: calc(0.9375rem + 0.9375 * (100vw - 87.5rem) / 12.5);
+    padding-right: calc(0.9375rem + 1.5625 * (100vw - 87.5rem) / 12.5);
   }
 }
 
@@ -1232,83 +1234,71 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   gap: 0.9375rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-}
-
-.home__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transform: translateY(35%);
-      -ms-transform: translateY(35%);
-          transform: translateY(35%);
+  font-family: "Ubuntu";
 }
 
 .home__text {
-  font-family: "Caveat";
   line-height: 130%;
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
+  color: #9545E4;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
-@supports (font-size: clamp( 1.875rem , 0.7535046729rem  +  5.6074766355vw , 5.625rem )) {
+@supports (font-size: clamp( 3.125rem , 2.3773364486rem  +  3.738317757vw , 5.625rem )) {
   .home__text {
-    font-size: clamp( 1.875rem , 0.7535046729rem  +  5.6074766355vw , 5.625rem );
+    font-size: clamp( 3.125rem , 2.3773364486rem  +  3.738317757vw , 5.625rem );
   }
 }
 
-@supports not (font-size: clamp( 1.875rem , 0.7535046729rem  +  5.6074766355vw , 5.625rem )) {
+@supports not (font-size: clamp( 3.125rem , 2.3773364486rem  +  3.738317757vw , 5.625rem )) {
   .home__text {
-    font-size: calc(1.875rem + 3.75 * (100vw - 20rem) / 66.875);
+    font-size: calc(3.125rem + 2.5 * (100vw - 20rem) / 66.875);
   }
 }
 
-.home__text_fonts-size {
-  text-transform: none;
-}
-
-@supports (font-size: clamp( 1.875rem , 1.1273364486rem  +  3.738317757vw , 4.375rem )) {
+@supports (font-size: clamp( 1.875rem , 0.9404205607rem  +  4.6728971963vw , 5rem )) {
   .home__text_fonts-size {
-    font-size: clamp( 1.875rem , 1.1273364486rem  +  3.738317757vw , 4.375rem );
+    font-size: clamp( 1.875rem , 0.9404205607rem  +  4.6728971963vw , 5rem );
   }
 }
 
-@supports not (font-size: clamp( 1.875rem , 1.1273364486rem  +  3.738317757vw , 4.375rem )) {
+@supports not (font-size: clamp( 1.875rem , 0.9404205607rem  +  4.6728971963vw , 5rem )) {
   .home__text_fonts-size {
-    font-size: calc(1.875rem + 2.5 * (100vw - 20rem) / 66.875);
+    font-size: calc(1.875rem + 3.125 * (100vw - 20rem) / 66.875);
   }
 }
 
 .home__text_nowrap {
   white-space: nowrap;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
-@supports (font-size: clamp( 1.25rem , 0.3154205607rem  +  4.6728971963vw , 4.375rem )) {
+@supports (font-size: clamp( 1.25rem , -0.2453271028rem  +  7.476635514vw , 6.25rem )) {
   .home__text_nowrap {
-    font-size: clamp( 1.25rem , 0.3154205607rem  +  4.6728971963vw , 4.375rem );
+    font-size: clamp( 1.25rem , -0.2453271028rem  +  7.476635514vw , 6.25rem );
   }
 }
 
-@supports not (font-size: clamp( 1.25rem , 0.3154205607rem  +  4.6728971963vw , 4.375rem )) {
+@supports not (font-size: clamp( 1.25rem , -0.2453271028rem  +  7.476635514vw , 6.25rem )) {
   .home__text_nowrap {
-    font-size: calc(1.25rem + 3.125 * (100vw - 20rem) / 66.875);
+    font-size: calc(1.25rem + 5 * (100vw - 20rem) / 66.875);
   }
 }
 
 .home__text_origin span {
-  color: #000;
-  background-color: rgba(106, 224, 224, 0.9);
-  font-family: "Ubuntu";
+  color: #c0c0c0;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -1436,8 +1426,9 @@ body {
 }
 
 .about__body {
-  font-family: "Caveat";
+  font-family: "Courier New";
   font-weight: 400;
+  padding: 0 0.625rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
@@ -1471,19 +1462,19 @@ body {
 
 .about__text {
   line-height: 1.3;
-  background-color: rgba(107, 224, 224, 0.8);
+  background-color: rgba(149, 69, 228, 0.7);
   z-index: 5;
 }
 
-@supports (font-size: clamp( 1.125rem , -0.125rem  +  2vw , 1.5rem )) {
+@supports (font-size: clamp( 0.875rem , -1.2083333333rem  +  3.3333333333vw , 1.5rem )) {
   .about__text {
-    font-size: clamp( 1.125rem , -0.125rem  +  2vw , 1.5rem );
+    font-size: clamp( 0.875rem , -1.2083333333rem  +  3.3333333333vw , 1.5rem );
   }
 }
 
-@supports not (font-size: clamp( 1.125rem , -0.125rem  +  2vw , 1.5rem )) {
+@supports not (font-size: clamp( 0.875rem , -1.2083333333rem  +  3.3333333333vw , 1.5rem )) {
   .about__text {
-    font-size: calc(1.125rem + 0.375 * (100vw - 62.5rem) / 18.75);
+    font-size: calc(0.875rem + 0.625 * (100vw - 62.5rem) / 18.75);
   }
 }
 
@@ -2054,7 +2045,7 @@ body {
 .icons-contact__item_18 {
   top: 54.2857142857%;
   left: 7.3529411765%;
-  color: #1778f2;
+  color: rgb(149, 69, 228);
   z-index: 0;
 }
 
@@ -2117,7 +2108,7 @@ body {
   color: #c0c0c0;
   line-height: 1.2222222222;
   padding: 0.625rem 0.9375rem;
-  border: 2px solid rgba(106, 224, 224, 0.4);
+  border: 2px solid rgba(149, 69, 228, 0.4);
   -webkit-transition: all 2s ease 0s;
   -o-transition: all 2s ease 0s;
   transition: all 2s ease 0s;
@@ -2168,8 +2159,9 @@ body {
 
 @media (min-width: 47.99875em) {
   .home__text {
-    -webkit-text-stroke: 2px rgb(22, 1, 1);
+    -webkit-text-stroke: 1px #c0c0c0;
     color: transparent;
+    color: #9545E4;
   }
 
   .about__decoration_one::before {
@@ -2195,20 +2187,22 @@ body {
 
   .about__decoration_two::before {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 40%;
+    left: 9%;
     color: rgba(106, 224, 224, 0.4);
+    -webkit-animation: bounceLeftRight 20s infinite linear;
+            animation: bounceLeftRight 20s infinite linear;
   }
 
-@supports (font-size: clamp( 12.5rem , -21.1448598131rem  +  168.2242990654vw , 125rem )) {
+@supports (font-size: clamp( 12.5rem , -2.453271028rem  +  74.7663551402vw , 62.5rem )) {
     .about__decoration_two::before {
-      font-size: clamp( 12.5rem , -21.1448598131rem  +  168.2242990654vw , 125rem );
+      font-size: clamp( 12.5rem , -2.453271028rem  +  74.7663551402vw , 62.5rem );
     }
 }
 
-@supports not (font-size: clamp( 12.5rem , -21.1448598131rem  +  168.2242990654vw , 125rem )) {
+@supports not (font-size: clamp( 12.5rem , -2.453271028rem  +  74.7663551402vw , 62.5rem )) {
     .about__decoration_two::before {
-      font-size: calc(12.5rem + 112.5 * (100vw - 20rem) / 66.875);
+      font-size: calc(12.5rem + 50 * (100vw - 20rem) / 66.875);
     }
 }
 
@@ -2239,7 +2233,7 @@ body {
   }
 
   .about__image-ibg {
-    border: 2px solid #6ae0e0;
+    border: 2px solid rgb(149, 69, 228);
   }
 
   .about__body {
@@ -2331,7 +2325,7 @@ body {
   }
 
   .body-contact__link {
-    border: 2px solid rgb(106, 224, 224);
+    border: 2px solid rgb(149, 69, 228);
   }
 }
 
@@ -2358,8 +2352,8 @@ body {
     background-color: #101010;
     border-radius: 0.625rem;
     overflow: hidden;
-    -webkit-box-shadow: rgba(106, 224, 224, 0.2) 0px 20px 30px -10px;
-            box-shadow: rgba(106, 224, 224, 0.2) 0px 20px 30px -10px;
+    -webkit-box-shadow: rgba(149, 69, 228, 0.12) 0px 2px 4px 0px, rgba(149, 69, 228, 0.32) 0px 2px 16px 0px;
+            box-shadow: rgba(149, 69, 228, 0.12) 0px 2px 4px 0px, rgba(149, 69, 228, 0.32) 0px 2px 16px 0px;
   }
 
   .about__image-ibg {
@@ -2390,8 +2384,8 @@ body {
   .case__text {
     top: 20%;
     left: 50%;
-    color: #6ae0e0;
-    border: 2px solid #6ae0e0;
+    color: rgb(149, 69, 228);
+    border: 2px solid rgb(149, 69, 228);
   }
 
   .contact__title {
@@ -2491,7 +2485,7 @@ body {
     top: 20%;
     right: 0;
     opacity: 0.4;
-    color: #6ae0e0;
+    color: rgb(149, 69, 228);
   }
 
   .icons-contact__item_18::before {
@@ -2576,14 +2570,15 @@ body {
     color: #1778f2;
   }
 
-  .home__body p:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+  .home__text_fonts-size:hover {
+    color: transparent;
+  }
+
+  .home__text_nowrap:hover {
+    color: transparent;
   }
 
   .home__text_origin span:hover {
-    background-color: rgba(253, 217, 71, 0.75);
     color: transparent;
   }
 
@@ -2615,8 +2610,8 @@ body {
   }
 
   .body-contact__link:hover {
-    -webkit-box-shadow: 0px -46px 0px #088 inset;
-            box-shadow: 0px -46px 0px #088 inset;
+    -webkit-box-shadow: 0px -46px 0px rgb(149, 69, 228) inset;
+            box-shadow: 0px -46px 0px rgb(149, 69, 228) inset;
   }
 }
 
