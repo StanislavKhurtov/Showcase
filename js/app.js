@@ -831,20 +831,20 @@
             duration: 1
         }, "-=1").from(".home__text_fonts-size", {
             opacity: 0,
-            y: 150,
+            y: 200,
             duration: .7
         }).from(".home__text_origin", {
             opacity: 0,
-            y: 150,
+            y: 200,
             duration: .7
-        }, "-=0.3").from(".home__text_nowrap", {
+        }, "-=0.1").from(".home__text_nowrap", {
             opacity: 0,
-            y: 150,
+            y: 200,
             duration: .7
-        }, "-=0.3").from(".home__btn", {
+        }, "-=0.1").from(".home__btn", {
             opacity: 0,
-            y: -150,
-            duration: .7
+            y: -200,
+            duration: 1.2
         });
         gsap.registerPlugin(ScrollTrigger);
         gsap.from(".about__title", {
@@ -986,6 +986,10 @@
                 end: "top 30%"
             }
         });
+        const titleOne = document.querySelector(".home__text_fonts-size");
+        titleOne.innerHTML = Array.from(titleOne.innerText, (n => `<span>${n}</span>`)).join("");
+        const titleThree = document.querySelector(".home__text_nowrap");
+        titleThree.innerHTML = Array.from(titleThree.innerText, (n => `<span>${n}</span>`)).join("");
         window["FLS"] = true;
         isWebp();
         addTouchClass();
