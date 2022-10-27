@@ -954,7 +954,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 3.75rem;
-  gap: 1.25rem;
+  -webkit-column-gap: 0.9375rem;
+     -moz-column-gap: 0.9375rem;
+          column-gap: 0.9375rem;
+}
+
+.social-menu__item {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  padding: 0.3125rem;
 }
 
 .social-menu__item a {
@@ -1194,15 +1203,15 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-@supports (font-size: clamp( 1.25rem , 1.0630841121rem  +  0.9345794393vw , 1.875rem )) {
+@supports (font-size: clamp( 1.75rem , 1.7126168224rem  +  0.1869158879vw , 1.875rem )) {
   .footer__item {
-    font-size: clamp( 1.25rem , 1.0630841121rem  +  0.9345794393vw , 1.875rem );
+    font-size: clamp( 1.75rem , 1.7126168224rem  +  0.1869158879vw , 1.875rem );
   }
 }
 
-@supports not (font-size: clamp( 1.25rem , 1.0630841121rem  +  0.9345794393vw , 1.875rem )) {
+@supports not (font-size: clamp( 1.75rem , 1.7126168224rem  +  0.1869158879vw , 1.875rem )) {
   .footer__item {
-    font-size: calc(1.25rem + 0.625 * (100vw - 20rem) / 66.875);
+    font-size: calc(1.75rem + 0.125 * (100vw - 20rem) / 66.875);
   }
 }
 
@@ -1250,7 +1259,7 @@ body {
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
-  color: #9545E4;
+  color: #9545e4;
 }
 
 @supports (font-size: clamp( 3.125rem , 2.3773364486rem  +  3.738317757vw , 5.625rem )) {
@@ -1363,15 +1372,15 @@ body {
   z-index: 2;
 }
 
-@supports (padding-top: clamp( 6.25rem , 2.8855140187rem  +  16.8224299065vw , 17.5rem )) {
+@supports (padding-top: clamp( 6.25rem , 4.3808411215rem  +  9.3457943925vw , 12.5rem )) {
   .about {
-    padding-top: clamp( 6.25rem , 2.8855140187rem  +  16.8224299065vw , 17.5rem );
+    padding-top: clamp( 6.25rem , 4.3808411215rem  +  9.3457943925vw , 12.5rem );
   }
 }
 
-@supports not (padding-top: clamp( 6.25rem , 2.8855140187rem  +  16.8224299065vw , 17.5rem )) {
+@supports not (padding-top: clamp( 6.25rem , 4.3808411215rem  +  9.3457943925vw , 12.5rem )) {
   .about {
-    padding-top: calc(6.25rem + 11.25 * (100vw - 20rem) / 66.875);
+    padding-top: calc(6.25rem + 6.25 * (100vw - 20rem) / 66.875);
   }
 }
 
@@ -1390,22 +1399,22 @@ body {
 .about__title {
   position: absolute;
   top: 0;
-  right: 3%;
+  right: 5%;
   color: #fff;
   text-transform: uppercase;
   -webkit-text-stroke: 2px rgb(243, 235, 235);
   color: transparent;
 }
 
-@supports (font-size: clamp( 4.375rem , -1.7932242991rem  +  30.8411214953vw , 25rem )) {
+@supports (font-size: clamp( 4.375rem , 0.0759345794rem  +  21.4953271028vw , 18.75rem )) {
   .about__title {
-    font-size: clamp( 4.375rem , -1.7932242991rem  +  30.8411214953vw , 25rem );
+    font-size: clamp( 4.375rem , 0.0759345794rem  +  21.4953271028vw , 18.75rem );
   }
 }
 
-@supports not (font-size: clamp( 4.375rem , -1.7932242991rem  +  30.8411214953vw , 25rem )) {
+@supports not (font-size: clamp( 4.375rem , 0.0759345794rem  +  21.4953271028vw , 18.75rem )) {
   .about__title {
-    font-size: calc(4.375rem + 20.625 * (100vw - 20rem) / 66.875);
+    font-size: calc(4.375rem + 14.375 * (100vw - 20rem) / 66.875);
   }
 }
 
@@ -1497,41 +1506,99 @@ body {
 
 .case {
   background-color: #000;
-  position: relative;
 }
 
-@supports (padding-top: clamp( 6.25rem , 0.6425233645rem  +  28.0373831776vw , 25rem )) {
+@supports (padding-top: clamp( 1.25rem , 1.0630841121rem  +  0.9345794393vw , 1.875rem )) {
   .case {
-    padding-top: clamp( 6.25rem , 0.6425233645rem  +  28.0373831776vw , 25rem );
+    padding-top: clamp( 1.25rem , 1.0630841121rem  +  0.9345794393vw , 1.875rem );
   }
 }
 
-@supports not (padding-top: clamp( 6.25rem , 0.6425233645rem  +  28.0373831776vw , 25rem )) {
+@supports not (padding-top: clamp( 1.25rem , 1.0630841121rem  +  0.9345794393vw , 1.875rem )) {
   .case {
-    padding-top: calc(6.25rem + 18.75 * (100vw - 20rem) / 66.875);
+    padding-top: calc(1.25rem + 0.625 * (100vw - 20rem) / 66.875);
   }
+}
+
+.case__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .case__title {
-  position: absolute;
-  top: 0;
-  left: 3%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   color: #fff;
   text-transform: uppercase;
   -webkit-text-stroke: 2px #f3ebeb;
   color: transparent;
-  z-index: 5;
 }
 
-@supports (font-size: clamp( 4.375rem , -1.7932242991rem  +  30.8411214953vw , 25rem )) {
+@supports (padding-left: clamp( 0.9375rem , 0.6571261682rem  +  1.4018691589vw , 1.875rem )) {
   .case__title {
-    font-size: clamp( 4.375rem , -1.7932242991rem  +  30.8411214953vw , 25rem );
+    padding-left: clamp( 0.9375rem , 0.6571261682rem  +  1.4018691589vw , 1.875rem );
   }
 }
 
-@supports not (font-size: clamp( 4.375rem , -1.7932242991rem  +  30.8411214953vw , 25rem )) {
+@supports not (padding-left: clamp( 0.9375rem , 0.6571261682rem  +  1.4018691589vw , 1.875rem )) {
   .case__title {
-    font-size: calc(4.375rem + 20.625 * (100vw - 20rem) / 66.875);
+    padding-left: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 66.875);
+  }
+}
+
+@supports (font-size: clamp( 4.375rem , 0.0759345794rem  +  21.4953271028vw , 18.75rem )) {
+  .case__title {
+    font-size: clamp( 4.375rem , 0.0759345794rem  +  21.4953271028vw , 18.75rem );
+  }
+}
+
+@supports not (font-size: clamp( 4.375rem , 0.0759345794rem  +  21.4953271028vw , 18.75rem )) {
+  .case__title {
+    font-size: calc(4.375rem + 14.375 * (100vw - 20rem) / 66.875);
+  }
+}
+
+.case__sub-title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-right: 1.875rem;
+  color: rgb(149, 69, 228);
+  font-family: "Caveat";
+  max-width: 37.5rem;
+}
+
+@supports (padding-left: clamp( 0.9375rem , 0.6571261682rem  +  1.4018691589vw , 1.875rem )) {
+  .case__sub-title {
+    padding-left: clamp( 0.9375rem , 0.6571261682rem  +  1.4018691589vw , 1.875rem );
+  }
+}
+
+@supports not (padding-left: clamp( 0.9375rem , 0.6571261682rem  +  1.4018691589vw , 1.875rem )) {
+  .case__sub-title {
+    padding-left: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 66.875);
+  }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.6507009346rem  +  1.1214953271vw , 1.625rem )) {
+  .case__sub-title {
+    font-size: clamp( 0.875rem , 0.6507009346rem  +  1.1214953271vw , 1.625rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.6507009346rem  +  1.1214953271vw , 1.625rem )) {
+  .case__sub-title {
+    font-size: calc(0.875rem + 0.75 * (100vw - 20rem) / 66.875);
   }
 }
 
@@ -1726,7 +1793,6 @@ body {
 .icons-contact__item_3 {
   top: 60%;
   left: 62.5%;
-  color: rgb(160, 142, 39);
 }
 
 @supports (font-size: clamp( 2.1875rem , 1.5332943925rem  +  3.2710280374vw , 4.375rem )) {
@@ -1750,7 +1816,6 @@ body {
 .icons-contact__item_4 {
   top: 82.8571428571%;
   left: 69.8529411765%;
-  color: #ff0000;
 }
 
 @supports (font-size: clamp( 1.4375rem , 1.0075934579rem  +  2.1495327103vw , 2.875rem )) {
@@ -1774,7 +1839,6 @@ body {
 .icons-contact__item_5 {
   top: 67.1428571429%;
   left: 45%;
-  color: #c0c0c0;
 }
 
 @supports (font-size: clamp( 1.4375rem , 1.0075934579rem  +  2.1495327103vw , 2.875rem )) {
@@ -1798,7 +1862,6 @@ body {
 .icons-contact__item_6 {
   top: 31.4285714286%;
   left: 69.8529411765%;
-  color: rgb(247, 211, 8);
 }
 
 @supports (font-size: clamp( 1.125rem , 0.7885514019rem  +  1.6822429907vw , 2.25rem )) {
@@ -1822,7 +1885,6 @@ body {
 .icons-contact__item_7 {
   top: 32.8571428571%;
   left: 50%;
-  color: #fff;
 }
 
 @supports (font-size: clamp( 0.75rem , 0.7126168224rem  +  0.1869158879vw , 0.875rem )) {
@@ -1863,7 +1925,6 @@ body {
 .icons-contact__item_9 {
   top: 41.4285714286%;
   left: 75%;
-  color: rgb(211, 55, 7);
 }
 
 @supports (font-size: clamp( 1rem , 0.9252336449rem  +  0.3738317757vw , 1.25rem )) {
@@ -1887,7 +1948,6 @@ body {
 .icons-contact__item_10 {
   top: 50%;
   left: 67.6470588235%;
-  color: #fff;
 }
 
 @supports (font-size: clamp( 0.625rem , 3.0288461538rem  +  -2.4038461538vw , 1.875rem )) {
@@ -1928,7 +1988,6 @@ body {
 .icons-contact__item_12 {
   top: 55.7142857143%;
   right: 5%;
-  color: #38044d;
 }
 
 @supports (font-size: clamp( 1.4375rem , 1.0075934579rem  +  2.1495327103vw , 2.875rem )) {
@@ -1952,7 +2011,6 @@ body {
 .icons-contact__item_13 {
   top: 50%;
   left: 79.4117647059%;
-  color: rgb(247, 211, 8);
 }
 
 @supports (font-size: clamp( 1.875rem , 1.3142523364rem  +  2.8037383178vw , 3.75rem )) {
@@ -1993,7 +2051,6 @@ body {
 .icons-contact__item_15 {
   top: 81.4285714286%;
   left: 51.4705882353%;
-  color: #1778f2;
 }
 
 @supports (font-size: clamp( 1.875rem , 1.3142523364rem  +  2.8037383178vw , 3.75rem )) {
@@ -2057,7 +2114,6 @@ body {
 .icons-contact__item_18 {
   top: 54.2857142857%;
   left: 7.3529411765%;
-  color: rgb(149, 69, 228);
   z-index: 0;
 }
 
@@ -2173,7 +2229,7 @@ body {
   .home__text {
     -webkit-text-stroke: 1px #c0c0c0;
     color: transparent;
-    color: #9545E4;
+    color: #9545e4;
   }
 
   .about__decoration_one::before {
@@ -2276,8 +2332,8 @@ body {
     transition: all 0.9s ease 0s;
   }
 
-  .icons-contact__item_1 {
-    color: #e1306c;
+  .icons-contact__item {
+    color: rgb(149, 69, 228);
   }
 
   .icons-contact__item_1::before {
@@ -2286,18 +2342,10 @@ body {
             transform: rotate(-12deg);
   }
 
-  .icons-contact__item_2 {
-    color: #0a66c2;
-  }
-
   .icons-contact__item_2::before {
     -webkit-transform: rotate(8deg);
         -ms-transform: rotate(8deg);
             transform: rotate(8deg);
-  }
-
-  .icons-contact__item_8 {
-    color: #333333;
   }
 
   .icons-contact__item_8::before {
@@ -2306,28 +2354,16 @@ body {
             transform: rotate(6deg);
   }
 
-  .icons-contact__item_11 {
-    color: #1d9bf0;
-  }
-
   .icons-contact__item_11::before {
     -webkit-transform: rotate(6deg);
         -ms-transform: rotate(6deg);
             transform: rotate(6deg);
   }
 
-  .icons-contact__item_14 {
-    color: #1778f2;
-  }
-
   .icons-contact__item_14::before {
     -webkit-transform: rotate(-8deg);
         -ms-transform: rotate(-8deg);
             transform: rotate(-8deg);
-  }
-
-  .icons-contact__item_17 {
-    color: #1778f2;
   }
 
   .icons-contact__item_17::before {
@@ -2356,6 +2392,10 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .home__text_origin span {
+    -webkit-text-stroke: 1px #000;
   }
 
   .about__content {
@@ -2391,6 +2431,20 @@ body {
 
   .about__text {
     background-color: transparent;
+  }
+
+  .case__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .case__sub-title {
+    max-width: 31.25rem;
   }
 
   .case__text {
@@ -2520,6 +2574,11 @@ body {
 }
 
 @media (any-hover: hover) {
+  .social-menu__item:hover {
+    background-color: #1f1f1f;
+    border-radius: 0.3125rem;
+  }
+
   .social-menu__item_twitter a:hover {
     color: #1d9bf0;
   }
@@ -2617,8 +2676,72 @@ body {
     	rgba(0, 0, 0, 0.09) 0px 32px 16px;*/
   }
 
-  .icons-contact__item:hover {
-    color: #6ae0e0;
+  .icons-contact__item_1:hover {
+    color: #e1306c;
+  }
+
+  .icons-contact__item_2:hover {
+    color: #0a66c2;
+  }
+
+  .icons-contact__item_3:hover {
+    color: rgb(160, 142, 39);
+  }
+
+  .icons-contact__item_4:hover {
+    color: #ff0000;
+  }
+
+  .icons-contact__item_5:hover {
+    color: #c0c0c0;
+  }
+
+  .icons-contact__item_6:hover {
+    color: rgb(247, 211, 8);
+  }
+
+  .icons-contact__item_7:hover {
+    color: #fff;
+  }
+
+  .icons-contact__item_8:hover {
+    color: #333333;
+  }
+
+  .icons-contact__item_9:hover {
+    color: #ff0000;
+  }
+
+  .icons-contact__item_10:hover {
+    color: #fff;
+  }
+
+  .icons-contact__item_11:hover {
+    color: #1d9bf0;
+  }
+
+  .icons-contact__item_12:hover {
+    color: #38044d;
+  }
+
+  .icons-contact__item_13:hover {
+    color: rgb(247, 211, 8);
+  }
+
+  .icons-contact__item_14:hover {
+    color: #1778f2;
+  }
+
+  .icons-contact__item_15:hover {
+    color: #1778f2;
+  }
+
+  .icons-contact__item_16:hover {
+    color: #ff0000;
+  }
+
+  .icons-contact__item_17:hover {
+    color: #1778f2;
   }
 
   .body-contact__link:hover {

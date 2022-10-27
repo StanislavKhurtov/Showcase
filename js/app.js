@@ -926,6 +926,16 @@
                 end: "top 30%"
             }
         });
+        gsap.from(".case__sub-title", {
+            opacity: 0,
+            scale: 2,
+            duration: 3,
+            scrollTrigger: {
+                trigger: ".case__sub-title",
+                start: "center 50%",
+                end: "top 30%"
+            }
+        });
         gsap.from(".case__title", {
             opacity: 0,
             scale: 2,
@@ -990,6 +1000,13 @@
         titleOne.innerHTML = Array.from(titleOne.innerText, (n => `<span>${n}</span>`)).join("");
         const titleThree = document.querySelector(".home__text_nowrap");
         titleThree.innerHTML = Array.from(titleThree.innerText, (n => `<span>${n}</span>`)).join("");
+        const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/390");
+        const buttonAudio = document.querySelectorAll(".click-audio");
+        buttonAudio.forEach((button => {
+            if (document.documentElement.clientWidth < 768) button.addEventListener("click", (() => {
+                audio.play();
+            }));
+        }));
         window["FLS"] = true;
         isWebp();
         addTouchClass();
