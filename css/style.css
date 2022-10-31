@@ -2,13 +2,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic&display=swap);
 
-@import url(https://fonts.googleapis.com/css?family=Fjalla+One:regular&display=swap);
-
 @import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700&display=swap);
 
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,regular,500,600,700);
-
-@import url(https://fonts.googleapis.com/css?family=Roboto+Flex:regular&display=swap);
 
 @charset "UTF-8";
 
@@ -1372,15 +1368,15 @@ body {
   z-index: 2;
 }
 
-@supports (padding-top: clamp( 6.25rem , 4.3808411215rem  +  9.3457943925vw , 12.5rem )) {
+@supports (padding-top: clamp( 5.625rem , 3.5689252336rem  +  10.2803738318vw , 12.5rem )) {
   .about {
-    padding-top: clamp( 6.25rem , 4.3808411215rem  +  9.3457943925vw , 12.5rem );
+    padding-top: clamp( 5.625rem , 3.5689252336rem  +  10.2803738318vw , 12.5rem );
   }
 }
 
-@supports not (padding-top: clamp( 6.25rem , 4.3808411215rem  +  9.3457943925vw , 12.5rem )) {
+@supports not (padding-top: clamp( 5.625rem , 3.5689252336rem  +  10.2803738318vw , 12.5rem )) {
   .about {
-    padding-top: calc(6.25rem + 6.25 * (100vw - 20rem) / 66.875);
+    padding-top: calc(5.625rem + 6.875 * (100vw - 20rem) / 66.875);
   }
 }
 
@@ -2396,6 +2392,10 @@ body {
 
   .home__text_origin span {
     -webkit-text-stroke: 1px #000;
+  }
+
+  .about__title {
+    top: 2.5rem;
   }
 
   .about__content {
