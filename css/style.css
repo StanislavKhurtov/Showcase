@@ -2396,6 +2396,7 @@ body {
 
   .about__title {
     top: 2.5rem;
+    -webkit-text-stroke: 2px rgb(149, 69, 228);
   }
 
   .about__content {
@@ -2443,8 +2444,13 @@ body {
             align-items: flex-start;
   }
 
+  .case__title {
+    -webkit-text-stroke: 2px rgb(149, 69, 228);
+  }
+
   .case__sub-title {
     max-width: 31.25rem;
+    color: #f3ebeb;
   }
 
   .case__text {
