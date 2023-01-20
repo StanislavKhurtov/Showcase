@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221031150457">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230120224100">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,25 +17,26 @@
 <body>
 	<div class="wrapper">
 		<header data-scroll="60" data-scroll-show class="header">
-
-			<a href="#" class="header__logo _icon-logo"></a>
-			<div class="header__menu menu">
-				<nav class="menu__body">
-					<ul class="menu__list">
-						<li data-goto="#about-section" class="menu__item click-audio"><a href="#" class="menu__link">About</a></li>
-						<li data-goto="#about-case" class="menu__item click-audio"><a href="#" class="menu__link">Work</a></li>
-						<li class="menu__item click-audio"><a href="contact.html#" class="click-audio menu__link">Contact</a></li>
-					</ul>
-					<ul class="menu__social social-menu">
-						<li class="social-menu__item click-audio social-menu__item_twitter"><a target="_blank" href="https://twitter.com/hurtov_s" class="social-menu__link _icon-twitter"></a></li>
-						<li class="social-menu__item click-audio social-menu__item_facebook"><a target="_blank" href="https://www.facebook.com/profile.php?id=100048497184027" class="social-menu__link _icon-facebook"></a></li>
-						<li class="social-menu__item click-audio social-menu__item_github"><a target="_blank" href="https://github.com/StanislavKhurtov" class="social-menu__link _icon-github"></a></li>
-						<li class="social-menu__item click-audio social-menu__item_instagram"><a target="_blank" href="https://www.instagram.com/staskhurtoff/" class="social-menu__link _icon-instagram"></a></li>
-						<li class="social-menu__item click-audio social-menu__item_linkedin"><a target="_blank" href="https://www.linkedin.com/in/stanislav-khurtov-4b1002228/" class="social-menu__link _icon-linkedin"></a></li>
-					</ul>
-				</nav>
+			<div class="header__container">
+				<a href="#" class="header__logo _icon-logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li data-goto="#about-section" class="menu__item click-audio"><a href="#" class="menu__link">About</a></li>
+							<li data-goto="#about-case" class="menu__item click-audio"><a href="#" class="menu__link">Work</a></li>
+							<li class="menu__item click-audio"><a href="contact.html#" class="click-audio menu__link">Contact</a></li>
+						</ul>
+						<ul class="menu__social social-menu">
+							<li class="social-menu__item click-audio social-menu__item_twitter"><a target="_blank" href="https://twitter.com/hurtov_s" class="social-menu__link _icon-twitter"></a></li>
+							<li class="social-menu__item click-audio social-menu__item_facebook"><a target="_blank" href="https://www.facebook.com/profile.php?id=100048497184027" class="social-menu__link _icon-facebook"></a></li>
+							<li class="social-menu__item click-audio social-menu__item_github"><a target="_blank" href="https://github.com/StanislavKhurtov" class="social-menu__link _icon-github"></a></li>
+							<li class="social-menu__item click-audio social-menu__item_instagram"><a target="_blank" href="https://www.instagram.com/staskhurtoff/" class="social-menu__link _icon-instagram"></a></li>
+							<li class="social-menu__item click-audio social-menu__item_linkedin"><a target="_blank" href="https://www.linkedin.com/in/stanislav-hurtov-4b1002228/" class="social-menu__link _icon-linkedin"></a></li>
+						</ul>
+					</nav>
+				</div>
+				<button type="button" class="menu__icon icon-menu click-audio"><span></span></button>
 			</div>
-			<button type="button" class="menu__icon icon-menu click-audio"><span></span></button>
 		</header>
 		<main class="mainpage">
 			<a class="noselect click-audio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -45,7 +46,7 @@
 				<div class="home__container">
 					<p class="home__text home__text_fonts-size">Hi, I'm</p>
 					<h1 class="home__text home__text_origin"><span>Stanislav</span></h1>
-					<p class="home__text home__text_nowrap">Front-End Developer</p>
+					<p class="home__text home__text_nowrap">Frontend Developer</p>
 					<a data-goto="#about-section" href="#"><span class="home__btn"></span></a>
 				</div>
 				<div class="home__images images-parallax">
@@ -60,8 +61,8 @@
 					</div>
 				</div>
 			</section>
-			<div id="about-section" class="horizontal">
-				<section class="horizontal__about about panel">
+			<section id="about-section" class="mainpage__horizontal horizontal">
+				<div class="horizontal__about about panel">
 					<h2 class="about__title">about</h2>
 					<div class="about__decoration about__decoration_one _icon-pixel"></div>
 					<div class="about__container">
@@ -73,7 +74,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
 				<div class="horizontal__about about panel">
 					<div class="about__decoration about__decoration_two _icon-pixel"></div>
 					<div class="about__container">
@@ -98,11 +99,13 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 			<section id="about-case" class="mainpage__case case">
 				<div class="case__info">
-					<h2 class="case__title">work</h2>
-					<div class="case__sub-title">You won't find my best project here. My best project is still ahead :) But, here you can get acquainted with the projects made by me in the learning process.</div>
+					<div class="case__container">
+						<h2 class="case__title">work</h2>
+						<div class="case__sub-title">You won't find my best project here. My best project is still ahead :) But, here you can get acquainted with the projects made by me in the learning process.</div>
+					</div>
 				</div>
 				<div class="case__list">
 					<div class="case__block case__block_one click-audio">
@@ -146,7 +149,7 @@
 					<a href="#" class="footer__logo _icon-logo"></a>
 					<div class="footer__social">
 						<div class="footer__list">
-							<a target="_blank" href="https://www.linkedin.com/in/stanislav-khurtov-4b1002228/" class="footer__item footer__item_linkid _icon-linkedin"></a>
+							<a target="_blank" href="https://www.linkedin.com/in/stanislav-hurtov-4b1002228/" class="footer__item footer__item_linkid _icon-linkedin"></a>
 							<a target="_blank" href="https://www.instagram.com/staskhurtoff/" class="footer__item footer__item_instagram _icon-instagram"></a>
 							<a target="_blank" href="https://github.com/StanislavKhurtov" class="footer__item footer__item_github _icon-github"></a>
 							<a target="_blank" href="https://twitter.com/hurtov_s" class="footer__item footer__item_twitter _icon-twitter"></a>
@@ -158,8 +161,8 @@
 			</div>
 		</footer>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js?_v=20221031150457"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js?_v=20221031150457"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js?_v=20230120224100"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js?_v=20230120224100"></script>
 	<!-- 
 <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
@@ -170,9 +173,9 @@
 		</div>
 	</div>
 </div>
- -->
+-->
 
-	<script src="js/app.min.js?_v=20221031150457"></script>
+	<script src="js/app.min.js?_v=20230120224100"></script>
 
 </body>
 

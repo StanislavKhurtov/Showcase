@@ -741,7 +741,6 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
-        "use strict";
         window.onload = function() {
             const parallax = document.querySelector(".home");
             if (parallax) {
@@ -799,7 +798,7 @@
         }
         function backToTop() {
             if (window.pageYOffset > 0) {
-                window.scrollBy(0, -300);
+                window.scrollBy(0, -600);
                 setTimeout(backToTop, 100);
             }
         }
