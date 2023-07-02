@@ -813,7 +813,7 @@
             scrollTrigger: {
                 trigger: ".horizontal",
                 pin: true,
-                scrub: 1,
+                scrub: 3,
                 snap: 1 / (sections.length - 1),
                 end: "+=3500"
             }
