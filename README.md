@@ -21,11 +21,8 @@ To deploy the portfolio on your local computer, follow the instructions below:
 Clone the repository to your computer:
 
 Copy
+
 git clone https://github.com/StanislavKhurtov/SHFrontend.git
 ```
 
-Go to the project directory:
 
-Copy
-Portfolio compact
--disks `
